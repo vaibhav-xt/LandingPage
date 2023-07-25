@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    transition: 0.5s all ease;
+    scroll-behavior: smooth;
+}
+
+p, span{
+    color: rgb(139, 131, 131);
+    line-height: 1.7rem;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/*--------- Header section --------*/
+header{
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+nav{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+nav img{
+    width: 7rem;
+}
+
+nav .bars{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: 100;
+    color: black;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+
+.register{
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid rgb(0, 179, 255);
+    border-radius: 10px;
+    color: rgb(0, 179, 255);
+}
+
+/*------------- Hero Section ----------- */
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0 5rem 0;
+}
+
+.box-div{
+    height: auto;
+    width: 50%;
+}
+
+.box-div h1{
+    margin-bottom: 2rem;
+    font-size: 3vw;
+}
+
+.box-div p{
+    margin-bottom: 3rem;
+    line-height: 1.6rem;
+}
+
+.btn{
+    text-align: center;
+    display: block;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    background: linear-gradient(
+        163deg,
+        rgba(74, 180, 253, 1) 31%,
+        rgba(17, 129, 238, 1) 68%
+    );
+    box-shadow: 0 5px 10px rgba(74, 181, 253, 0.548);
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: white;
+    width: 200px;
+}
+
+.btn:hover {
+    box-shadow: 0 5px 10px rgba(74, 181, 253);
+  }
+
+.box img{
+    margin: 0 2rem 0 2rem;
+    width: 50%;
+}
+
+/*--------- Services -----*/
+.Services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.Services-box-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding-right: 1rem;
+}
+
+.Services-box-one h1{
+    width: 50%;
+    font-size: 3vw;
+}
+
+.Services-box-one p{
+    width: 50%;
+}
+
+.Services-box-two{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    grid-gap: 3rem;
+    width: 100%;
+}
+
+.card h3{
+    margin: 1rem 0 1rem 0;
+}
+
+.cloud{
+    width: 45px;
+}
+
+.svg{
+    width: 2.5rem;
+}
+
+/*-------- Pricing ------*/
+.pricing{
+    width: 100%;
+    background: linear-gradient(
+        163deg,
+        rgba(74, 180, 253, 1) 31%,
+        rgba(17, 129, 238, 1) 68%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 5rem 0;
+    padding: 3rem 0 3rem 0;
+}
+
+.pricing h1{
+    font-size: 3.5vw;
+    margin: 0 0 2rem 0;
+}
+
+.price-all-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 3rem 0 3rem;
+    height: auto;
+}
+
+.price-cards{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 35rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.price-title, .price-cards ul, .price-details{
+    padding: 2rem;
+}
+
+.price-title h4{
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.price-cards ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 15rem;
+}
+
+.price-cards ul li{
+    display: flex;
+}
+
+.price-cards .price-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 15rem;
+}
+
+.btn-bg{
+    background: white;
+    color: rgb(0, 179, 255);
+    border: 2px solid rgb(0, 179, 255);
+}
+
+.bg-black{
+    background-color: rgb(57, 55, 55);
+    color: white;
+    border-radius: 10px;
+}
+
+.bg-black p{
+    color: white;
+}
+
+.price-cards ul li i{
+    margin-right: 1rem;
+}
+
+/*--------- Customers ---------*/
+.customers{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 0 3rem 0;
+}
+
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    min-height: 10rem;
+}
+
+.customer h1{
+    font-size: 3vw;
+}
+
+.clients{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 3rem;
+}
+
+.clients p{
+    color: black;
+}
+
+.client-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    padding: 2rem 2rem 0 2rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.profile-cards{
+    background-color: white;
+}
+
+.client-profile{
+    display: flex;
+    align-items: center;
+}
+
+.client-profile div{
+    margin: 2rem;
+}
+
+/*--------- Contact Us -----*/
+
+.book-now{
+    background: url(Images/footer-bg.svg);
+    color: white;
+}
+
+.book-block{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.block{
+    width: 50%;
+}
+
+.block-center{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block h1{
+    font-size: 3vw;
+    margin-bottom: 2rem;
+}
+
+.block p{
+    color: white;
+}
+
+.block .btn-special{
+    background: transparent;
+    padding: 1rem 2rem 1rem 2rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/*------ Footer ------*/
+footer{
+    padding: 3rem 0 0 0;
+}
+
+.footer-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-container .info{
+    max-width: 350px;
+}
+
+.info img{
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+
+.footer-container .footer-box{
+    display: flex;
+    flex-direction: column;
+    height: 14rem;
+}
+
+.footer-container h3{
+    font-size: 2rem;
+}
+
+.footer-box a{ 
+    text-decoration: none;
+    color: rgb(139, 131, 131);
+    margin-top: 1.5rem;
+}
+
+.social-media{
+    height: 14rem;
+}
+
+.social-media div{ 
+    padding: 1rem 0 2rem 0; 
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.social-media div img{
+    width: 100%;
+}
+
+/*----- Media Queries ------*/
+
+@media (max-width: 900px) {
+    nav{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    nav .bars{
+        display: block;
+    }
+
+    nav .bars #cross-bar{
+        display: none;
+    }
+
+    #menu-bar:hover,
+    #menu-bar:active,
+    #cross-bar:active,
+    #cross-bar:hover{
+        rotate: 180deg;
+    }
+
+    nav ul{
+        overflow: hidden;
+        position: absolute;
+        right: -100%;
+        top: 95px;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 200px;
+        gap: 0;
+        z-index: -1;
+        transform: scale(0);
+        height: 20rem;
+    }
+    
+    .showcase{
+        top: 95px;
+        right: 10px;
+        background: whitesmoke;
+        transform: scale(1);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    nav ul li{
+        padding: .5rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .register{
+        border: none;
+        color: black;
+    }
+    
+    nav ul li a{
+        padding: 2rem;
+        color: black;
+    }
+
+    nav ul li:hover,
+    nav ul li:active{
+        padding: 1rem;
+        transform: scale(1);
+        background-color: white;
+    }
+
+    .price-all-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .price-cards{
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .pricing h1{
+        font-size: 6vw;
+    }
+
+    .customer h1{
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .box{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .box .box-div, 
+    .box img{
+        width: 100%;
+    }
+
+    .box img{
+        margin: 2rem 0 2rem 0;
+    }
+
+    .box-div h1,
+    .Services-box-one h1,
+    .book-block h1{
+        width: 100%;
+        font-size: 9vw;
+    }
+
+    .Services-box-one p{
+        width: 100%;
+    }
+
+    .Services-box-one{
+        flex-direction: column;
+    }
+
+    .price-all-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .price-all-cards{
+        padding: 0 2rem 0 2rem;
+    }
+
+    .customer{
+        padding: 2rem;
+    }
+
+    .clients{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .book-block{
+        flex-direction: column;
+    }
+
+    .block{
+        width: 100%;
+    }
+
+    .block-center{
+        margin: 2rem 0 2rem 0;
+        justify-content: flex-start;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .info, .social-media, .footer-box{
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .box-flex{
+        flex-direction: column;
+    }
+}
+
+
+

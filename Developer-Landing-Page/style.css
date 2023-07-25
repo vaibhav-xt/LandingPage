@@ -1,0 +1,435 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+/*-------------- header -------------*/
+header{
+  padding-bottom: 4vw;
+  color: white;
+  background-color: rgb(45, 0, 128);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  justify-content: space-between;
+}
+
+
+nav{
+  padding: 1em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: center;
+}
+
+nav svg{
+  width: 50px;
+  margin: 1rem 1rem 1.5rem 1rem;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+}
+
+nav a:active{
+  color: white;
+}
+
+.nav-item-active{
+  min-width: 6rem;
+  margin: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: white;
+  color:  rgb(45, 0, 128);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.header-text, .nav-logo{
+  padding: 3rem 0 0 3rem;
+  width: 100%;
+}
+
+.header-text{
+  width: 100%;
+  font-size: 1.5vw;
+}
+
+.header-image-container{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-image-container img{
+  position: absolute;
+  width: 35%;
+  top: 90px;
+}
+
+
+/*--------- companies ---------*/
+.companies{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  padding: 1vw;
+}
+
+.companies a{
+  font-size: 1.3vw;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+}
+
+/*----------- API Section --------- */
+
+.api{
+  width: 100%;
+  padding: 3rem;
+}
+
+.api h1{
+  font-weight: bolder;
+  margin: 0.5em 0 .5em 0;
+}
+
+.cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  min-width: 200px;
+  padding: 2em;
+}
+
+.card-active{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-active h3{
+  color: rgb(45, 0, 128);
+}
+
+/* Blog Section  */
+
+.blog-heading{
+  padding: 3rem 3rem 1.5rem 3rem;
+}
+
+.blog-cards{
+  padding: 0 3rem 3rem 3rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.blog-card{
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  background: white;
+  display: flex;
+  min-width: 300px;
+  max-width: 700px; 
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.blog-content{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.blog-bottom{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blog-card .blog-image{
+  height: 100%;
+}
+
+.blog-card .blog-image img{
+  height: 100%;
+}
+
+/*---------- FAQ Section ---------*/
+
+.faq-section{
+  background-color: white;
+  padding:0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-content{
+  z-index: 1;
+  padding: 3rem;
+}
+
+.faq-content h2{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.faq-content h4{
+  margin-bottom: 2rem;
+}
+
+.faq-image{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.faq-image img{
+  height: 100%;
+}
+
+.faq-content button{
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color:  rgb(45, 0, 128);
+  color: white;
+}
+
+
+/*-------------- Dowload Section  -----------*/
+.download-section{
+  min-width: 300px;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.download-content h1{
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.download-content span{
+  font-weight: lighter;
+}
+
+.download-email{
+  max-width: 500px;
+  width: 50%;
+  min-width: 300px;
+  background-color:  rgb(226, 211, 255);
+  border-radius: 999px;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input{
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  background-color:  rgb(226, 211, 255);
+  padding: 1rem;
+}
+
+form input::placeholder{
+  color: black;
+}
+
+form button{
+  position: relative;
+  border: 0;
+  border-radius: 999px;
+  height: 100%;
+  color: white;
+  background-color:  rgb(45, 0, 128);
+  width: 150px;
+}
+
+/*----------- Footer ---------- */
+
+.footer-section{
+  padding: 3rem;
+  color: white;
+  background-color: rgb(45, 0, 128);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+.footer-left ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.footer-right{
+  width: 150px;
+}
+
+.footer-right-logos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-right ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 950px){
+  .faq-section{
+    flex-direction: column-reverse;
+  }
+
+  .faq-image{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .faq-image img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px){
+  nav{
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-logo{
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .header-text{
+    padding: 1rem;
+    font-size: 4vw;
+  }
+
+  .header-image-container img{
+    width: 80%;
+    position:inherit;
+  }
+
+  .companies{
+    width: 100%;
+  }
+
+  .companies a{
+    font-size: 3.5vw;
+  }
+
+  .api{
+    padding: 1rem;
+  }
+
+  .blog-heading{
+    padding: 1rem;
+  }
+
+  .blog-cards{
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .blog-card{
+    margin-top: 1rem;
+    border-top-left-radius: 999px;
+  }
+
+  .blog-image img{
+    width: 100%;
+  }
+
+  .blog-image{
+    border-radius: none;
+  }
+
+  .blog-card{
+    flex-direction: column;
+  }
+
+  .faq-content{
+    padding: 1rem;
+  }
+
+  .download-section{
+    padding: 1rem;
+  }
+
+  .footer-section{
+    padding: 1rem;
+  }
+
+  .footer-right{
+    margin-top: 2rem;
+  }
+}
+
+/* cursor pointer */
+
+.nav-logo,
+nav a, 
+nav svg,
+form button,
+.footer-left img,
+.footer-left li,
+.footer-right-logos .footer-logos,
+.logos-list li{
+  cursor: pointer;
+}

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    transition: 0.3s;
+    user-select: none;
+}
+
+.cross{
+    display: none;
+}
+
+.show-bar{
+    left: 0;
+}
+
+li{
+    @apply p-2 
+}
+
+li:hover{
+    background-color: whitesmoke;
+}
+
+.ul-main:hover .ul-main-li,
+.ul-sub:hover .ul-sub-li,
+.ul-sub-list:hover .ul-sub-list-li{
+    display: block;
+}
+
+nav p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav p:hover i{
+    transform: rotate(90deg);
+    display: flex;
+}
+
+/* Main Section */
+
+.cards{
+    @apply w-32 hover:bg-sky-500 p-2 rounded-xl flex flex-col justify-between h-40 my-4 font-semibold text-white
+}
+
+.cards-img{
+    @apply w-16
+}
+
+.cards_hover{
+    @apply hover:bg-blue-800 p-2 rounded-xl flex flex-col justify-between h-40 my-4 font-semibold text-white w-32 text-xl
+}
+
+.btn:hover .btn img{
+    color: black;
+}
+
+.show-box{
+    display: flex;
+}
